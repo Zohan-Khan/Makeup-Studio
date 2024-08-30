@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1><title>Makeup Studio</title></h1>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Common Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f4f4;
+        }
+        header {
+            background-color: #e1bee7;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px 20px;
+            background-color: #fff;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #8e24aa;
+        }
+        footer {
+            background-color: #e1bee7;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Home Section */
+        #home {
+            background-image: url('https://cdn.britannica.com/35/222035-050-C68AD682/makeup-cosmetics.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        #home h1 {
+            padding-top: 100px;
+            font-size: 3em;
+        }
+        #home p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        /* Products Section */
+        .products {
+            text-align: center;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background-color: #f3e5f5;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            color: #8e24aa;
+        }
+        .product-card p {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            text-align: center;
+        }
+        .pricing-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .pricing-card {
+            background-color: #f3e5f5;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+        .pricing-card h3 {
+            margin: 10px 0;
+            color: #8e24aa;
+        }
+        .pricing-card p.price {
+            font-size: 1.5em;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact input[type="submit"] {
+            background-color: #8e24aa;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/52/ed/99/52ed99725f110e84fd001fb07e91123e.jpg" alt="Makeup Studio Logo">
+            Makeup Studio
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Makeup Studio</h1>
+        <p>Your one-stop destination for all things beauty.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h1>About Our Studio</h1>
+        <p>Welcome to Makeup Studio, where beauty meets creativity. Our mission is to empower everyone to express their unique style through our premium makeup products. We believe in beauty that inspires confidence and celebrates individuality.</p>
+        <p>Our team of expert makeup artists and beauty enthusiasts is dedicated to bringing you the best in makeup innovation, from timeless classics to the latest trends. Discover our story and join us on a journey to redefine beauty.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h1>Our Products</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/137505922/photo/set-of-red-lipsticks.jpg?s=612x612&w=0&k=20&c=DqQrRtS3-nvkobOqOFsszMEh6dadNFE_PxzAyF2cgDU=" alt="Lipstick">
+                <h3>Luxurious Lipstick</h3>
+                <p>$20.00</p>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGkBrxAjfrvk2VhIgZfQqjRElfNFV_r3rOA&s" alt="Eyeshadow Palette">
+                <h3>Eyeshadow Palette</h3>
+                <p>$35.00</p>
+            </div>
+            <div class="product-card">
+                <img src="https://img.drz.lazcdn.com/static/pk/p/2ae586a7a664aa91007d770c4aa36cfa.jpg_960x960q80.jpg_.webp" alt="Foundation">
+                <h3>Flawless Foundation</h3>
+                <p>$30.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <h1>Our Pricing</h1>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Basic Package</h3>
+                <p>Includes 3 lipsticks and 1 eyeshadow palette.</p>
+                <p class="price">$50.00</p>
+            </div>
+            <div class="pricing-card">
+                <h3>Standard Package</h3>
+                <p>Includes 2 foundations, 2 lipsticks, and 1 eyeshadow palette.</p>
+                <p class="price">$100.00</p>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium Package</h3>
+                <p>Includes 3 foundations, 3 lipsticks, 2 eyeshadow palettes, and 1 brush set.</p>
+                <p class="price">$150.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Makeup Studio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</
